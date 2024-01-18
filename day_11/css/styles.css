@@ -37,10 +37,10 @@ Tabla de contenidos:
 
 .content {
     width: 70%;
-    height: 650px;
+    height: 620px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
     overflow: hidden;
 }
 
@@ -80,7 +80,7 @@ p {
     margin-bottom: 0;
     line-height: 2;
     margin-block: 50px;
-    width: 205px;
+    width: 230px;
     justify-self: left;
 }
 
@@ -102,16 +102,34 @@ p {
     justify-self: flex-start;
 }
 
+.sedans-button:hover {
+    border: 3px solid var(--transparent-white);
+    color: var(--transparent-white);
+    padding: 8px;
+    border-radius: 50px;
+}
+
 .suvs-button {
     color: var(--dark-cyan);
     justify-self: flex-start;
 }
 
+.suvs-button:hover {
+    border: 3px solid var(--transparent-white);
+    color: var(--transparent-white);
+    padding: 8px;
+    border-radius: 50px;
+}
 .luxury-button {
     color: var(--ver);
     justify-self: flex-start;
 }
-
+.luxury-button:hover {
+    border: 3px solid var(--transparent-white);
+    color: var(--transparent-white);
+    padding: 8px;
+    border-radius: 50px;
+}
 .center {
     background: var(--dark-cyan);
     display: grid;
