@@ -1,0 +1,145 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- Variables ----- */
+* {
+	--primary-font-family: 'Poppins', sans-serif;
+	--body-bg-color: #EEF2F9;
+	--btn-bg-color: #4788E9;
+	--text-color: #191847;
+	--white-color: #FFFFFF;
+	--black-color: #000000;
+	--font-size: 1rem;
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--font-size);
+	line-height: var(--lh-text);
+
+	/* center card */
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 760px;
+	height: 560px;
+	display: flex;
+	flex-direction: row;
+	background: var(--white-color);
+	border-radius: 12px;
+	box-shadow: 0px 0px 70px -48px var(--text-color);
+	overflow: hidden;
+}
+
+.image{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	margin-top: 10%;
+}
+
+.image img{
+	width: 194px;
+	height: 180px;
+}
+.content{
+	margin-top: 10%;
+	width: 54%;
+}
+
+.content span{
+	color: var(--white-color);
+	background: var(--text-color);
+    padding: 4px 8px 4px 8px;
+	border-radius: 16px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.content h2{
+	font-weight: 600;
+}
+
+.content u{
+	text-decoration: line-through;
+}
+.content h3{
+	font-size: 40px;
+	margin-bottom: 0px;
+	margin-top: 6%;
+}
+
+.text{
+	font-size: 14px;
+	color: #9594ab;
+}
+.content button {
+	width: 100%;
+	background: var(--btn-bg-color);
+	border: none;
+    box-shadow: 0px 8px 0px 0px #1f5ab1;
+	height: 11%;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+	color: var(--white-color);
+	margin-top: 5%;
+}
+
+.list{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 6%;
+}
+.list span {
+	font-size: xxx-large;
+	color: #44d895;
+	background: none; 
+    padding: 0;
+    border-radius: 0;
+	margin-right: 5px;
+	font-weight: 500;
+}
+
+.btn {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.btn button{
+	width: 48%;
+	height: 50.05px;
+	background-color: var(--white-color);
+	box-shadow: none;
+	border: 1px solid var(--black-color);
+	color: var(--text-color);
+}
+i{
+	font-size: 18px;
+	margin-right: 5%;
+}
+
