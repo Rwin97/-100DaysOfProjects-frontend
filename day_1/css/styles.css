@@ -1,0 +1,110 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+4. Créditos ....................... 37
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+/* ----- Variables ----- */
+* {
+	--primary-font-family: 'Montserrat', sans-serif;
+	--body-bg-color: #212020;
+	--card-bg-color: #242323;
+	--footer-bg-color: #1f1e1e;
+	--text-color: #c2c2c2;
+	--fb-bg-color: #456da4;
+	--li-bg-color: #0984c6;
+	--ig-bg-color: #006184;
+	--tw-bg-color: #00acee;
+
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	line-height: var(--lh-text);
+
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 382px;
+	height: 552px;
+	background: var(--card-bg-color);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.image{
+	display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+img {
+	width: 150px;
+	border-radius: 50%;
+}
+span{
+	background: var(--body-bg-color);
+	padding: 3px 14px 3px 14px;
+	border-radius: 18px 18px 18px 18px;
+	font-size: 14px;
+}
+p{
+	width: 78%;
+	margin-top: 8%;
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	background: var(--footer-bg-color);
+	width: 100%;
+	height: -webkit-fill-available;
+	margin-top: 6%;
+	align-items: center;
+}
+
+i{
+	font-size: 24px;
+}
+.twitter i{
+	color: var(--tw-bg-color);
+	width: 20px;
+} 
+
+.linkdn i{
+	color: var(--li-bg-color);
+	width: 20px;
+} 
+.facebook i{
+	color: var(--fb-bg-color);
+	width: 20px;
+} 
+
+/* ------------------------
+Diseño: UIDesign Daily🎨
+Desarrollo: Frontend Club🔥
+--------------------------- */
