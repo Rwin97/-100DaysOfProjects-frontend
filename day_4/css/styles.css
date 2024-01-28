@@ -8,16 +8,16 @@ Tabla de contenidos:
 
 
 /* ----- Fuente ----- */
-@import url("https://fonts.googleapis.com/css?family=Merryweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 
 /* ----- Variables ----- */
 * {
-	--title-font-family: 'Merryweather', sans-serif;
+	--title-font-family: 'Merriweather', sans-serif;
 	--body-font-family: 'Poppins', sans-serif;
 
-	--body-bg-color: #D2DDF6;
+	--body-bg-color: #c7d2e7;
 	--card-bg-color: #F6F9FF;
 	--text-color: #12163C;
 
@@ -35,7 +35,7 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
-	font-family: var(--primary-font-family);
+	font-family: var(--body-font-family);
 	background-color: var(--body-bg-color);
 	color: var(--text-color);
 	font-size: var(--fs-text);
@@ -44,5 +44,131 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.card {
+	width: 800px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	background: var(--card-bg-color);
+	border-radius: 3rem;
+	box-shadow: 18px 10px 0px 10px #e3eefe;
+	overflow: hidden;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.content-title {
+	width: 80%;
+}
+
+.content-title h1 {
+	font-size: 34px;
+	font-family: var(--title-font-family);
+}
+
+.content-statistics {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.content-statistics p {
+	width: 100%;
+	margin: 0;
+	margin-left: 0;
+	margin-top: 6px;
+	margin-bottom: 18%;
+}
+
+.bar-graphic {
+	display: flex;
+	flex-direction: row;
+	width: 56%;
+	justify-content: space-between;
+	margin-top: 1px;
+}
+
+.numbers p {
+	margin-top: 6px;
+	margin-bottom: 55%;
+	font-weight: 600;
+}
+
+.bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	height: 137.4%;
+	margin-top: -8.1%;
+	margin-left: 6%;
+	z-index: 1;
+}
+
+input {
+	height: 1px;
+	margin-top: -40px;
+}
+
+.bar input:nth-child(1) {
+	background: var(--blue-color-1);
+	border: none;
+	width: 144px;
+	height: 5px;
+	border-radius: 5px
+}
+
+.bar input:nth-child(2) {
+	background: var(--blue-color-2);
+	border: none;
+	width: 118px;
+	height: 5px;
+	border-radius: 5px
+}
+
+.bar input:nth-child(3) {
+	background: var(--blue-color-3);
+	border: none;
+	width: 70px;
+	height: 5px;
+	border-radius: 5px
+}
+
+.bar input:nth-child(4) {
+	background: var(--blue-color-4);
+	border: none;
+	width: 36px;
+	height: 5px;
+	border-radius: 5px
+}
+
+canvas {
+	width: 196px !important;
+	height: 196px !important;
+	position: relative;
+	z-index: 1;
+}
+
+.graphic p {
+	z-index: 2;
+    text-align: center;
+    position: absolute;
+    right: 13.86rem;
+    top: 32.8rem;
+}
+
+.routes{
+	display: flex;
+	flex-direction: row;
+	width: 640px;
+	justify-content: flex-end;
+	margin-top: -7%;
+    margin-bottom: 4%;
+}

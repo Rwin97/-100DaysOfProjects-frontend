@@ -15,12 +15,52 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Archivo de estilos -->
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Analytics</title>
 </head>
 
 <body>
+    <div class="card">
+        <section class="content-title">
+            <h1>Traffic source types</h1>
+            <span>Views · Last 28 days</span>
+        </section>
+        <section class="content-statistics">
+            <div class="graphic">
+                <canvas id="graphic"></canvas>
+                <p>Traffic <br>sources</p>
+            </div>
+            <div class="bar-graphic">
+                <div id="subs">
+                    <p>Chanel pages</p>
+                    <p>Direct or unkown</p>
+                    <p>Search</p>
+                    <p>External</p>
+                </div>
+                <div class="bar">
+                    <input type="button">
+                    <input type="button">
+                    <input type="button">
+                    <input type="button">
+                </div>
+                <div class="numbers">
+                    <p>37.5%</p>
+                    <p>33.6%</p>
+                    <p>11%</p>
+                    <p>6%</p>
+                </div>
+            </div>
+        </section>
+        <div class="routes">
+            <a href="#">See more</a>
+        </div>
+    </div>
 
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/index.js">
 
+    </script>
 </body>
 
 </html>
