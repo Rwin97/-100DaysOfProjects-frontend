@@ -1,0 +1,154 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+/* ----- Variables ----- */
+* {
+    /* primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* neutrla colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    /* letter size and type letter*/
+    --primary-font-family: 'Red Hat Display', sans-serif;
+    --font-size-paragraph: 16px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+    font-family: var(--primary-font-family);
+    font-size: var(--font-size-paragraph);
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-color: var(--pale-blue);
+    background-repeat: repeat-x;
+    /* card center */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: var(--very-pale-blue);
+    width: 400px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.content h2 {
+    color: var(--dark-blue);
+    margin-bottom: 6px;
+}
+
+.content>p:nth-child(2) {
+    text-align: center;
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+}
+
+.order {
+    width: 89.37%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background: hsl(225deg 50.17% 95.56%);
+    padding: 6px 18px 6px 18px;
+    border-radius: 10px;
+}
+
+.order p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    margin-left: 9%;
+}
+
+.order p span:nth-child(1) {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.order p span:nth-child(2) {
+    color: var(--desaturated-blue);
+}
+
+.order a {
+    text-align: end;
+    color: var(--bright-blue);
+}
+
+.order a:hover {
+    color: #551a8b;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    color: var(--very-pale-blue);
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 10px;
+    margin-top: 32px;
+    cursor: pointer;
+    box-shadow: 0 10px 12px var(--desaturated-blue);
+}
+
+button:hover {
+    background: hsl(245, 79%, 67%);
+}
+
+.content p:last-child {
+    margin-top: 34px;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.content p:last-child:hover {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+@media(max-width: 640px) {
+    .container {
+        width: 88%;
+        height: 72%;
+    }
+}
