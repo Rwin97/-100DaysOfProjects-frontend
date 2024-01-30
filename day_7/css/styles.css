@@ -15,6 +15,7 @@ Tabla de contenidos:
 * {
     --primary-font-family: 'Outfit', sans-serif;
     /* primary colors */
+    --font-blue: hsl(212, 45%, 89%);
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
     /* neutral colors */
@@ -31,7 +32,7 @@ Tabla de contenidos:
 /* ----------------------------- */
 
 body {
-    background: var(--soft-blue);
+    background: var(--font-blue);
     font-family: var(--primary-font-family);
     font-size: var(--font-size-paragraph);
 
@@ -45,7 +46,7 @@ body {
 .container {
     background-color: var(--white);
     width: 392px;
-    height: 620px;
+    height: 596px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -79,7 +80,7 @@ p {
 @media(max-width:640px) {
     .container {
         width: 351px;
-        height: 580px;
+        height: 552px;
     }
 
     img {
