@@ -85,7 +85,8 @@ body {
     cursor: pointer;
     border-radius: 8px;
 }
-.hover img:nth-child(1){
+
+.hover img:nth-child(1) {
     width: 48px;
     height: 48px;
 }
@@ -103,55 +104,57 @@ body {
     height: 30%;
 }
 
-.contente-after h4{
+.contente-after h4 {
     color: white;
     cursor: pointer;
     margin-bottom: 18px;
     margin-top: 22px;
 }
-.contente-after h4:hover{
+
+.contente-after h4:hover {
     color: var(--cyan);
 }
 
-.contente-after > p:nth-child(2){
+.contente-after>p:nth-child(2) {
     color: var(--soft-blue);
     line-height: 1.7;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.detail{
+.detail {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 16px;
     align-items: center;
 }
 
-.detail p{
+.detail p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.detail p span:nth-child(1) img{
+.detail p span:nth-child(1) img {
     width: 14px;
     height: 24px;
     margin-right: 6px;
 }
 
-.detail p span:nth-child(2) img{
+.detail p span:nth-child(2) img {
     width: 24px;
     height: 22px;
     margin-right: 6px;
 }
 
-.detail p span:nth-child(1){
+.detail p span:nth-child(1) {
     text-align: start;
     color: var(--cyan);
     display: flex;
     align-items: center;
 }
-.detail p span:nth-child(2){
+
+.detail p span:nth-child(2) {
     text-align: end;
     color: var(--soft-blue);
     display: flex;
@@ -190,26 +193,65 @@ body {
     cursor: pointer;
 }
 
-@media(max-width: 640px){
-    .container{
+@media(max-width: 640px) {
+    .container {
         width: 90%;
         height: 80%;
     }
-    .image{
+
+    .image {
         margin-top: 4%;
     }
-    .contente-after{
+
+    .contente-after {
         width: 301.86px;
     }
-    .contente-after h4{
+
+    .contente-after h4 {
         margin-top: 12%;
     }
 
-    .content-then{
+    .content-then {
         width: 301.86px;
     }
 
-    .detail p{
+    .detail p {
         margin-top: 26px;
+    }
+}
+
+@media(max-width: 375px) {
+    .container {
+        width: 90%;
+        height: 80%;
+    }
+
+    .image {
+        height: 47%;
+        margin-top: 1%;
+    }
+
+    .contente-after {
+        width: 301.86px;
+        margin-bottom: 10px;
+    }
+
+    .contente-after h4 {
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+
+    .content-then {
+        width: 301.86px;
+        height: 13%;
+    }
+
+    .content-then p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .detail p {
+        margin-top: 6px;
     }
 }

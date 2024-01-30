@@ -100,3 +100,28 @@ p {
         margin-bottom: 10%;
     }
 }
+
+@media(max-width:375px) {
+    .container {
+        width: 351px;
+        height: 520px;
+    }
+
+    img {
+        width: 89%;
+        height: 53.86%;
+        margin-top: 9px;
+    }
+
+    h1 {
+        font-size: 1.51em;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    p {
+        width: 84%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+}

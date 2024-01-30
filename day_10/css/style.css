@@ -47,7 +47,7 @@ body {
 
 .container {
     width: 80vw;
-    height: 550px;
+    height: 520px;
     display: flex;
     flex-direction: row;
     background-color: var(--dark-desaaturated-blue);
@@ -104,6 +104,7 @@ body {
     color: var(--white);
     font-size: 24px;
     font-weight: bold;
+    font-family: var(--primary-font-family);
 }
 
 .statistics .item2{
@@ -183,5 +184,54 @@ body {
     
     .statistics .item2{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 85vw;
+        height: 90vh;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .card-container{
+        width: 100%;
+        height: 40;
+    }
+    .content{
+        width: 86%;
+        align-items: center;
+    }
+    .content h1{
+        text-align: center;
+        font-size: 27px;
+    }
+    .content>p{
+        text-align: center;
+        width: 100%;
+        font-size: var(--md);
+        margin-bottom: -8px;
+    }
+    .statistics{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+        gap: 0;
+    }
+    .statistics >p{
+        margin-top: 2px;
+    }
+    .img-container{
+        width: 100%;
+        height: 34%;
+        object-fit: cover;
+    }
+    .statistics .item1{
+        font-size: 17px;
+    }
+    
+    .statistics .item2{
+        font-size: 11px;
+        margin-top: 2px;
     }
 }

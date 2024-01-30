@@ -193,3 +193,66 @@ i {
 		font-size: 14px;
 	}
 }
+
+@media (max-width: 375px) {
+	.container {
+		width: 90%;
+		height: 92%;
+		background: var(--white-color);
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		border-radius: 12px;
+	}
+
+	img {
+		content: url('../images/image-product-mobile.jpg');
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.container-content {
+		width: 100%;
+	}
+
+	.content {
+		margin-top: 18px;
+		width: 85%;
+	}
+
+	span {
+		font-size: 14px;
+	}
+
+	.text {
+		margin-top: 2%;
+		height: 50px;
+		margin-bottom: 0px;
+	}
+
+	h1 {
+		font-size: 32px;
+		width: 100%;
+		margin-top: 4%;
+		margin-bottom: 5%;
+	}
+
+	p {
+		width: 100%;
+		margin-top: 0;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0px;
+	}
+
+	h2 {
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+
+	u {
+		margin-left: 8%;
+		margin-top: 3%;
+		font-size: 14px;
+	}
+}
