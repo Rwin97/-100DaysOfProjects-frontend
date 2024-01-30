@@ -206,6 +206,7 @@ button:hover{
         justify-content: space-between;
         align-items: center;
         border-radius: 0;
+        overflow: visible;
     }
     .content-result{
         width: 100%;
