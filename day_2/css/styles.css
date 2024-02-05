@@ -90,7 +90,6 @@ body {
 
 .content-text h1:hover {
 	cursor: pointer;
-	font-size: 30px;
 	color: var(--yellow-color);
 }
 
@@ -146,7 +145,6 @@ body {
 	}
 	.content-text h1:hover {
 		cursor: pointer;
-		font-size: 24px;
 		color: var(--yellow-color);
 	}
 	.avatar{
