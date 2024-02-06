@@ -7,7 +7,6 @@ Tabla de contenidos:
 -------------------- 
 */
 
-
 /* ----- Fuente ----- */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
 
@@ -34,17 +33,20 @@ Tabla de contenidos:
 body {
     font-family: var(--primary-font-family);
     font-size: var(--main-font-size);
-    background: white;
+    background: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right 30%;
+    background-size: inherit, inherit;
 
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 60%;
-    height: 60%;
+    width: 72rem;
+    height: 37rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,7 +122,7 @@ body {
 
 .content-card {
     width: 100%;
-    height: 48%;
+    height: 46%;
     display: grid;
     grid-template-columns: auto 1fr auto;
     justify-content: space-between;
@@ -128,7 +130,7 @@ body {
 
 .avatar {
     width: 362px;
-    height: 250px;
+    height: 230px;
     background-color: var(--very-sark-sagenta);
     border-radius: 9px;
     overflow: hidden;
@@ -136,6 +138,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card-start {
+    align-self: start;
+}
+
+.card-center {
+    align-self: center;
+    justify-self: center;
+}
+
+.card-end {
+    align-self: end;
 }
 
 .avatar img {
@@ -178,80 +193,85 @@ body {
     margin-top: 6px;
 }
 
-.card-start {
-    align-self: start;
-}
-
-.card-center {
-    align-self: center;
-    justify-self: center;
-}
-
-.card-end {
-    align-self: end;
-}
-
+/* Media Query para dispositivos móviles */
 @media (max-width: 640px) {
+    body {
+        min-height: 150vh;
+        background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+        align-items: normal;
+    }
+
     .container {
-        width: 88%;
-        height: 80%;
+        width: 94%;
+        height: 100%;
+        margin: 5.5rem 0 !important;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 2rem;
     }
 
     .content {
-        flex-direction: column;
-    }
-
-    .content-card {
-        grid-template-columns: auto;
-        justify-content: normal;
-    }
-
-    .content-starts {
         width: 100%;
-        justify-content: center;
-    }
-
-    .text {
-        width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .text h1 {
-        text-align: center;
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        font-size: 3em;
+        text-align: center;
+    }
+
+    .text h1 {
+        width: 90%;
+        font-size: 2.5em;
+        margin-bottom: 0;
         line-height: 0.8;
-        margin-bottom: 4px;
     }
 
     .text p {
-        text-align: center;
-        width: 84%;
+        width: 98%;
+        font-size: 1.0rem;
+    }
+
+    .content-starts {
+        width: 98%;
+        grid-template-columns: 1fr;
     }
 
     .primary-start {
-        width: 100%;
-        grid-template-columns: auto;
-        justify-content: center;
-        gap: 0;
+        width: 96%;
+        height: 50px;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        justify-items: center;
+        gap: 6px;
+        padding: 12px 0px;
     }
 
-    .avatar{
-        width: 93%;
-        justify-self: center;
+    .content-card {
+        width: 98%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 18px;
     }
 
-    .start {
-        justify-self: center;
+    .avatar {
+        width: 96%;
+        height: 220px;
     }
 
-    .center {
-        justify-self: center;
+    .img-avatar {
+        width: 240px;
     }
 
-    .end {
-        justify-self: center;
+    .avatar>p:nth-child(2) {
+        width: 240px;
     }
 }

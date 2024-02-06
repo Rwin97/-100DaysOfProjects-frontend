@@ -9,12 +9,196 @@ Tabla de contenidos:
 
 
 /* ----- Fuente ----- */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 /* ----- Variables ----- */
-
+* {
+    /* primary colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --sombra: rgba(114, 128, 167, 0.3);
+    /* neutral colors */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    /* type fonts */
+    --general-font-size: 15px;
+    --primary-font-family: 'Poppins', sans-serif;
+}
 
 
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+
+body {
+    background: var(--very-light-gray);
+    font-family: var(--primary-font-family);
+    font-size: var(--general-font-size);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-text h1:nth-child(1) {
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: var(--grayish-blue);
+}
+
+.content-text h1:nth-child(2) {
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--very-dark-blue);
+}
+
+.content-text p {
+    width: 60%;
+    line-height: 1.8;
+    color: var(--grayish-blue);
+}
+
+.content-boxs {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.content-boxs h3 {
+    color: var(--very-dark-blue);
+}
+
+.content-boxs p {
+    color: var(--grayish-blue);
+}
+
+.box-container {
+    width: 82%;
+    height: 92%;
+}
+
+.box {
+    width: 350px;
+    height: 234px;
+    background: var(--very-light-gray);
+    border-top: 3px solid;
+    border-radius: 6px;
+    box-shadow: 0 8px 26px var(--sombra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-right {
+    align-self: center;
+    border-top-color: var(--cyan);
+}
+
+.box-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-top {
+    border-top-color: var(--red);
+}
+
+.box-bottom {
+    border-top-color: var(--orange);
+}
+
+.box-left {
+    align-self: center;
+    border-top-color: var(--blue);
+}
+
+.box-container figure {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.box-container figure img {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 640px) {
+    body {
+        min-height: 144vh;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .content-text {
+        width: 100%;
+    }
+
+    .content-text h1:nth-child(1) {
+        font-size: 26.2px;
+    }
+
+    .content-text h1:nth-child(2) {
+        font-size: 26.5px;
+    }
+
+    .content-text p {
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .content-boxs {
+        width: 100%;
+        height: 108vh;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        height: 212px;
+    }
+
+    .box-center {
+        gap: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+    body {
+        min-height: 150vh;
+    }
+
+    .content-boxs {
+        height: 115vh;
+    }
+}
