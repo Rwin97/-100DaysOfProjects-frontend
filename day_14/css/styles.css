@@ -195,10 +195,10 @@ body {
 
 @media (max-width: 390px) {
     body {
-        min-height: 150vh;
+        min-height: 190vh;
     }
 
     .content-boxs {
-        height: 115vh;
+        height: 150vh;
     }
 }
