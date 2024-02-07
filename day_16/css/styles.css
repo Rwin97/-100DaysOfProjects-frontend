@@ -80,8 +80,9 @@ body {
 }
 
 .register-content h1 {
+    width: 90%;
     margin-top: 60px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: white;
     line-height: 1.5;
 }
@@ -110,6 +111,7 @@ body {
 }
 
 .social-networks {
+    width: 90%;
     height: 70px;
     display: flex;
     flex-direction: row;
