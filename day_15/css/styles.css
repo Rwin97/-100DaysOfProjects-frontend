@@ -1,0 +1,219 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* ----- Variables ----- */
+* {
+    /* primary colors */
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-2: #4bbebd;
+    --bright-yellow: hsl(71, 73%, 54%);
+    /* neutral colors */
+    --sombra: rgba(114, 128, 167, 0.3);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: #fffffe;
+    /* type fonts */
+    --primary-font-family: 'Karla', sans-serif;
+    --primary-font-size: 16px;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+    background: var(--light-gray);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 790px;
+    height: 596px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 26px var(--sombra);
+    overflow: hidden;
+}
+
+.content-top {
+    width: 87%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-top h1 {
+    color: var(--cyan);
+    font-size: 1.9em;
+}
+
+.content-top h2 {
+    margin-top: 6px;
+    margin-bottom: 14px;
+    color: var(--bright-yellow);
+    font-size: 1.42em;
+}
+
+.content-top p {
+    width: 88%;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 0;
+    color: var(--grayish-blue);
+}
+
+.content-bottom {
+    width: 100%;
+    height: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subscription {
+    background: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-subscription {
+    width: 74%;
+    height: 78%;
+}
+
+.content-subscription h3 {
+    font-size: 1.5rem;
+    color: var(--light-gray);
+}
+
+.content-subscription p {
+    color: var(--light-gray);
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.content-subscription button {
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background: var(--bright-yellow);
+    color: var(--light-gray);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 18px;
+    cursor: pointer;
+    box-shadow: 0 18px 20px var(--sombra);
+}
+
+.text {
+    width: 54%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.text h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text span {
+    color: var(--light-gray)
+}
+
+.description {
+    background: var(--cyan-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-description {
+    width: 74%;
+    height: 78%;
+    color: var(--light-gray);
+}
+
+.content-description h3 {
+    font-size: 1.5rem;
+    color: var(--light-gray);
+}
+
+.content-description p {
+    width: 13rem;
+    line-height: 1.5;
+    color: var(--light-gray);
+}
+
+@media (max-width: 640px) {
+    body{
+        min-height: 144vh;
+    }
+    .container{
+        width: 88%;
+        height: 826px;
+    }
+    .content-top{
+        height: 35%;
+    }
+
+    .content-top h1{
+        font-size: 1.5em;
+    }
+
+    .content-top h2{
+        font-size: 1.1em;
+    }
+
+    .content-top p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .content-bottom {
+        height: 75%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .content-subscription{
+        width: 87%;
+    }
+
+    .content-subscription h3{
+        margin-top: 0;
+    }
+
+    .content-description{
+        width: 87%;
+    }
+
+    .content-description h3{
+        margin-top: 0;
+    }
+}
