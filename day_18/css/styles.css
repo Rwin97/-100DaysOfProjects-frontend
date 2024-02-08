@@ -1,0 +1,264 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+/* ----- Variables ----- */
+* {
+    /* primary colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    /* type fonts */
+    --primary-font-family: 'Young Serif', serif;
+    --second-font-family: 'Outfit', sans-serif;
+    --font-size-paragraph: 16px
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    background: var(--eggshell);
+    font-family: var(--primary-font-family);
+    font-size: var(--font-size-paragraph);
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 100;
+    color: var(--nutmeg);
+}
+
+ul {
+    font-size: 15px;
+}
+
+.container {
+    width: 650px;
+    height: 90%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.content {
+    width: 92%;
+    height: 96.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 92%;
+    height: 24.5%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 4%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.description h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--dark-charcoal);
+}
+
+.description p {
+    font-family: var(--second-font-family);
+    color: var(--wenge-brown);
+    font-size: 15px;
+}
+
+.preparation-time {
+    font-family: var(--second-font-family);
+    background: var(--rose-white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.preparation-time h3 {
+    margin-left: 25px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--dark-raspberry);
+}
+
+.preparation-time li {
+    line-height: 1.8;
+    padding-left: 10px;
+    margin-left: 8px;
+    color: var(--wenge-brown);
+}
+
+.preparation-time ul li::marker {
+    color: var(--dark-raspberry);
+}
+
+.preparation-time li span {
+    font-weight: 600;
+    color: var(--wenge-brown);
+}
+
+.ingredients ul {
+    padding-left: 22px;
+}
+
+.ingredients li {
+    line-height: 1.5;
+    font-family: var(--second-font-family);
+    color: var(--wenge-brown);
+    padding-left: 10px;
+    margin-left: 8px;
+}
+
+.ingredients ul li::marker {
+    color: var(--nutmeg);
+}
+
+.instructions {
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.instructions ol {
+    font-family: var(--second-font-family);
+    padding-left: 22px;
+}
+
+.instructions li {
+    color: var(--wenge-brown);
+    padding-left: 10px;
+    margin-left: 8px;
+    line-height: 1.3;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.instructions ol li span {
+    font-weight: 600;
+}
+
+.instructions ol li::marker {
+    font-weight: 600;
+    color: var(--nutmeg);
+}
+
+.nutritions span {
+    font-family: var(--second-font-family);
+    font-size: 15px;
+}
+
+.list-nutritions {
+    margin-top: 24px;
+}
+
+.list-nutritions p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--light-grey);
+    height: 26px;
+}
+
+.list-nutritions p:last-child {
+    border: none;
+}
+
+.list-nutritions p span:nth-child(1) {
+    margin-left: 28px;
+    color: var(--wenge-brown);
+}
+
+.list-nutritions p span:nth-child(2) {
+    margin-left: 12px;
+    font-weight: 600;
+    color: var(--nutmeg);
+}
+
+@media(max-width: 640px) {
+    body {
+        min-height: 188vh;
+    }
+
+    .container {
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .image {
+        width: 100%;
+        height: 15%;
+        margin-top: 0;
+        overflow: visible;
+    }
+
+    .content {
+        width: 86%;
+    }
+
+    .description h1 {
+        font-size: 2.1rem;
+    }
+
+    .description p {
+        width: 88%;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        min-height: 243vh;
+    }
+
+    .container {
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .image {
+        width: 100%;
+        height: 15%;
+        margin-top: 0;
+        overflow: visible;
+    }
+
+    .content {
+        width: 86%;
+    }
+
+    .description h1 {
+        font-size: 2.1rem;
+    }
+
+    .description p {
+        width: 92%;
+    }
+}
