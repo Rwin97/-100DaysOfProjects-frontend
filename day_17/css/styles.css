@@ -139,3 +139,29 @@ body {
         height: 44px;
     }
 }
+
+@media(max-width: 640px){
+    .container{
+        width: 90%;
+        height: 68%;
+    }
+    .top{
+        margin-top: 0;
+    }
+    .top h2{
+        margin-top: 18px;
+    }
+    .top p{
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .bottom{
+        width: 85%;
+        gap: 13px;
+    }
+
+    .bottom button{
+        height: 44px;
+    }
+}

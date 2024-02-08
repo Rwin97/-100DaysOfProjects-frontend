@@ -217,35 +217,41 @@ body {
     body {
         min-height: 100vh;
     }
-    .title{
+
+    .title {
         height: 70px;
     }
 
-    .image{
+    .image {
         height: 200px;
     }
+
     .content {
         height: 84%;
     }
-    .register-content{
+
+    .register-content {
         margin-top: 0;
     }
-    .register-content h1{
+
+    .register-content h1 {
         margin-top: 36px;
     }
 
-    .register-content p{
+    .register-content p {
         margin-bottom: 0;
     }
 
-    .social-networks{
+    .social-networks {
         margin-top: 0;
     }
-    .icon{
+
+    .icon {
         width: 24px;
         height: 24px;
     }
-    .icon i{
+
+    .icon i {
         font-size: 12px;
     }
 }
