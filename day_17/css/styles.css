@@ -140,6 +140,13 @@ body {
     }
 }
 
+@media(max-width: 390px){
+    .container{
+        width: 90%;
+    }
+}
+
+
 @media(max-width: 640px){
     .container{
         width: 90%;
