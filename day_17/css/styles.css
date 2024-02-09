@@ -114,61 +114,67 @@ body {
     color: var(--dark-grey);
 }
 
-@media(max-width: 375px){
-    .container{
+@media(max-width: 375px) {
+    .container {
         width: 90%;
         height: 80%;
     }
-    .top{
+
+    .top {
         margin-top: 0;
     }
-    .top h2{
+
+    .top h2 {
         margin-top: 18px;
     }
-    .top p{
+
+    .top p {
         font-size: 14px;
         margin-top: 12px;
     }
 
-    .bottom{
+    .bottom {
         width: 85%;
         gap: 13px;
     }
 
-    .bottom button{
+    .bottom button {
         height: 44px;
     }
 }
 
-@media(max-width: 390px){
-    .container{
+@media(max-width: 390px) {
+    .container {
         width: 90%;
     }
 }
 
 
-@media(max-width: 640px){
-    .container{
+@media(max-width: 640px) {
+    .container {
         width: 90%;
         height: 68%;
     }
-    .top{
+
+    .top {
         margin-top: 0;
     }
-    .top h2{
+
+    .top h2 {
         margin-top: 18px;
     }
-    .top p{
+
+    .top p {
         font-size: 14px;
         margin-top: 12px;
     }
 
-    .bottom{
+    .bottom {
         width: 85%;
         gap: 13px;
     }
 
-    .bottom button{
+    .bottom button {
         height: 44px;
     }
 }

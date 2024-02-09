@@ -1,0 +1,225 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+
+/* ----- Variables ----- */
+* {
+    /* primary colors */
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+
+    /* font type */
+    --primary-font-family: 'Work Sans', sans-serif;
+    --primary-font-size: 16px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    background: url("../images/background-pattern-desktop.svg"), var(--light-pink);
+    background-repeat: repeat-x;
+    font-size: var(--primary-font-size);
+    font-family: var(--primary-font-family);
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acordeon label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    appearance: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--dark-purple);
+    font-size: 19px;
+    height: 90px;
+}
+
+label:hover {
+    color: hsl(281, 83%, 54%);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:checked+label img {
+    content: url("../images/icon-minus.svg");
+}
+
+input[type="radio"]:not(:checked)+label img {
+    content: url("../images/icon-plus.svg");
+}
+
+.container {
+    width: 648px;
+    height: 63%;
+    background: var(--white);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 86%;
+    height: 88%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: baseline;
+    gap: 28px;
+}
+
+.title img {
+    width: 40px;
+    height: 44px;
+}
+
+.title h1 {
+    font-size: 3.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.container-acordeon {
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+}
+
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--light-pink);
+}
+
+.container-acordeon p {
+    line-height: 1.5;
+    width: 94%;
+    color: var(--grayish-purple);
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.acordeon .content-acordeon {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.02s ease;
+}
+
+.acordeon input:checked+label~.content-acordeon {
+    max-height: 500px;
+}
+
+.last-acordeon {
+    border: none;
+}
+
+@media(max-width: 640px) {
+    body {
+        background: url("../images/background-pattern-mobile.svg"), var(--light-pink);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container {
+        width: 86%;
+        height: 70%;
+    }
+
+    .acordeon label {
+        font-size: 16px;
+        height: 90px;
+    }
+
+    .title {
+        height: 44px;
+    }
+
+    .title h1 {
+        font-size: 2.4rem;
+    }
+
+    .title img {
+        width: 30px;
+        height: 29px;
+    }
+
+    .container-acordeon p {
+        font-size: 14px;
+        width: 98%;
+    }
+
+    ;
+
+    .acordeon label {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        background: url("../images/background-pattern-mobile.svg"), var(--light-pink);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 86%;
+        height: 74%;
+    }
+
+    .acordeon label {
+        font-size: 16px;
+        height: 66px;
+    }
+
+    .title {
+        height: 44px;
+    }
+
+    .title h1 {
+        font-size: 2.4rem;
+    }
+
+    .title img {
+        width: 30px;
+        height: 29px;
+    }
+
+    .container-acordeon p {
+        font-size: 14px;
+        width: 98%;
+    }
+
+    ;
+
+    .acordeon label {
+        font-size: 17px;
+    }
+}
